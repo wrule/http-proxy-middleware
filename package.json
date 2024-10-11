@@ -86,9 +86,8 @@
     "ws": "8.18.0"
   },
   "dependencies": {
-    "@types/http-proxy": "^1.17.15",
+    "@wrule/http-proxy": "^1.18.2",
     "debug": "^4.3.6",
-    "@wrule/http-proxy": "^1.18.1",
     "is-glob": "^4.0.3",
     "is-plain-object": "^5.0.0",
     "micromatch": "^4.0.8"

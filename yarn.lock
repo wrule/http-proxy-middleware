@@ -1063,13 +1063,6 @@
   resolved "https://registry.yarnpkg.com/@types/http-errors/-/http-errors-2.0.1.tgz#20172f9578b225f6c7da63446f56d4ce108d5a65"
   integrity sha512-/K3ds8TRAfBvi5vfjuz8y6+GiAYBZ0x4tXv1Av6CWBWn0IlADc+ZX9pMq7oU0fNQPnBwIZl3rmeLp6SBApbxSQ==
 
-"@types/http-proxy@^1.17.15":
-  version "1.17.15"
-  resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.15.tgz#12118141ce9775a6499ecb4c01d02f90fc839d36"
-  integrity sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==
-  dependencies:
-    "@types/node" "*"
-
 "@types/is-glob@4.0.4":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@types/is-glob/-/is-glob-4.0.4.tgz#1d60fa47ff70abc97b4d9ea45328747c488b3a50"
@@ -1302,10 +1295,10 @@
     "@typescript-eslint/types" "8.8.1"
     eslint-visitor-keys "^3.4.3"
 
-"@wrule/http-proxy@^1.18.1":
-  version "1.18.1"
-  resolved "http://npm.perfma-inc.com:80/@wrule%2fhttp-proxy/-/http-proxy-1.18.1.tgz#28766e185befc1392346c8eb19ffcf617cdd60f7"
-  integrity sha512-Uzr+sBjQxwJYTatOagk89TXhdd/E6JE60ZMtRIr468yJwNfohao7jGIKqqg7wQz/T0eOfcEG01nTh9tmk+8AKQ==
+"@wrule/http-proxy@^1.18.2":
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/@wrule/http-proxy/-/http-proxy-1.18.2.tgz#62b921d2b7b666262edab924a0408b64996df840"
+  integrity sha512-fQtx3zfHnEt7eFoNJrALtR3SKxiuMMeVOjEnS2DuxGBcR+affJv9vkWgYdk23y48YnLXWiet76OvfV4h7Y+ywQ==
   dependencies:
     eventemitter3 "^4.0.0"
     follow-redirects "^1.0.0"
