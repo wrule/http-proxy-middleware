@@ -1,5 +1,5 @@
 {
-  "name": "http-proxy-middleware",
+  "name": "@wrule/http-proxy-middleware",
   "type": "commonjs",
   "version": "3.0.3",
   "description": "The one-liner node.js proxy middleware for connect, express, next.js and more",
