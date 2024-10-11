@@ -24,9 +24,6 @@
     "prepack": "yarn clean && yarn test && yarn build",
     "spellcheck": "npx --yes cspell --show-context --show-suggestions '**/*.*'"
   },
-  "publishConfig": {
-    "provenance": true
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chimurai/http-proxy-middleware.git"
