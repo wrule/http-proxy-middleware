@@ -22,12 +22,21 @@ type Interceptor<TReq = http.IncomingMessage, TRes = http.ServerResponse> = (
 export function responseInterceptor<
   TReq extends http.IncomingMessage = http.IncomingMessage,
   TRes extends http.ServerResponse = http.ServerResponse,
->(interceptor: Interceptor<TReq, TRes>) {
+>(
+  interceptor: Interceptor<TReq, TRes>,
+  enable?: (proxyRes: TReq, req: TReq, res: TRes) => boolean,
+  passer?: (proxyRes: TReq, req: TReq, res: TRes) => Promise<void>,
+) {
   return async function proxyResResponseInterceptor(
     proxyRes: TReq,
     req: TReq,
     res: TRes,
   ): Promise<void> {
+    if (enable && !enable(proxyRes, req, res) && passer) {
+      passer(proxyRes, req, res);
+      return;
+    }
+
     debug('intercept proxy response');
     const originalProxyRes = proxyRes;
     let buffer = Buffer.from('', 'utf8');
