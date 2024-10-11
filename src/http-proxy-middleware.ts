@@ -2,7 +2,7 @@ import type * as net from 'net';
 import type * as http from 'http';
 import type * as https from 'https';
 import type { RequestHandler, Options, Filter, Logger } from './types';
-import * as httpProxy from 'http-proxy';
+import * as httpProxy from '@wrule/http-proxy';
 import { verifyConfig } from './configuration';
 import { getPlugins } from './get-plugins';
 import { matchPathFilter } from './path-filter';

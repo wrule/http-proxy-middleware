@@ -458,7 +458,7 @@ The following options are provided by the underlying [http-proxy](https://github
   'use strict';
 
   const streamify = require('stream-array');
-  const HttpProxy = require('http-proxy');
+  const HttpProxy = require('@wrule/http-proxy');
   const proxy = new HttpProxy();
 
   module.exports = (req, res, next) => {

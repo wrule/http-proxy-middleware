@@ -4,7 +4,7 @@
  */
 
 import type * as http from 'http';
-import type * as httpProxy from 'http-proxy';
+import type * as httpProxy from '@wrule/http-proxy';
 import type * as net from 'net';
 
 export type NextFunction<T = (err?: any) => void> = T;
