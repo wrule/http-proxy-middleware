@@ -8,7 +8,7 @@ import globals from 'globals';
 export default tseslint.config(
   // replacement of legacy `.eslintignore`
   {
-    ignores: ['dist', 'src/type-http-proxy.d.ts'],
+    ignores: ['dist'],
   },
   // extends...
   eslint.configs.recommended,
